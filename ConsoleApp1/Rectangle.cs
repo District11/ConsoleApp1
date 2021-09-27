@@ -48,10 +48,7 @@ namespace ConsoleApp1
         /// </summary>
         public double Area
         {
-            get
-            {
-                return this.AreaCalculator();
-            }
+            get => this.AreaCalculator();
         }
 
         /// <summary>
@@ -59,10 +56,7 @@ namespace ConsoleApp1
         /// </summary>
         public double Perimetr
         {
-            get
-            {
-                return this.PerimetrCalculate();
-            }
+            get => this.PerimetrCalculate();
         }
     }
 }
