@@ -8,6 +8,7 @@ namespace ConsoleApp2
         {
             Book book = new Book("Q", "Bob", "adsmkdsk" );
             book.AddBook();
+            book.Show();
         }
     }
 }

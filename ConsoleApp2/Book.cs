@@ -34,30 +34,44 @@ namespace ConsoleApp2
             this._author = new Author(author);
             this._content = new Content(content);
         }
-        
+
+        /// <summary>
+        /// Метод выведения информации
+        /// </summary>
+        public void Show()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine($"Название книги: {_title}");
+            
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"Автор книги: {_author}");
+            
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Содержание книги: {_content}");
+        }
+
+
         /// <summary>
         /// Метод для добавления книги
         /// </summary>
         public void AddBook()
         {
+            
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Введите название книги: ");
             string title = Console.ReadLine();
+            this._title = new Title(title);
             
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Введите название автора: ");
             string author = Console.ReadLine();
+            this._author = new Author(author);
             
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Введите контент: ");
             string content = Console.ReadLine();
+            this._content = new Content(content);
             
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"Название: {title}");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"Автор: {author}");
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Контент: {content}");
         }
     }
 
@@ -67,15 +81,7 @@ namespace ConsoleApp2
     public class Title
     {
         private string _title;
-
-        /// <summary>
-        /// Метод для выведения информации о названии книги
-        /// </summary>
-        public void Show()
-        {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Название книги: ");
-        }
+        
         /// <summary>
         /// Конструктор названия
         /// </summary>
@@ -91,15 +97,7 @@ namespace ConsoleApp2
     public class Author
     {
         private string _author;
-        /// <summary>
-        /// Метод для выведения информации об авторе
-        /// </summary>
-        public void Show()
-        {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Автор книги: ");
-        }
-       
+
         /// <summary>
         /// Конструктор автора
         /// </summary>
@@ -117,16 +115,7 @@ namespace ConsoleApp2
     public class Content
     {
         private string _content;
-        
-        /// <summary>
-        /// Метод для выведения информации о содержании книги
-        /// </summary>
-        public void Show()
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Содержание книги: ");
-        }
-        
+
         /// <summary>
         /// Конструктор содержания книги
         /// </summary>
