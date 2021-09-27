@@ -33,11 +33,6 @@ namespace ConsoleApp2
             this._title = new Title(title);
             this._author = new Author(author);
             this._content = new Content(content);
-            
-            this._title.Show();
-            this._author.Show();
-            this._content.Show();
-            
         }
         
         /// <summary>
