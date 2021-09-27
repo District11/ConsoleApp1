@@ -15,8 +15,8 @@ namespace ConsoleApp1
         /// <summary>
         /// Конструктор прямоугольника
         /// </summary>
-        /// <param name="side1"></param>
-        /// <param name="side2"></param>
+        /// <param name="side1">Длина</param>
+        /// <param name="side2">Ширина</param>
         public Rectangle(double side1, double side2)
         {
             this._side1 = side1;
@@ -29,8 +29,7 @@ namespace ConsoleApp1
         /// <returns></returns>
         public double AreaCalculator()
         {
-           double result = _side1 * _side2;
-           return result;
+           return _side1 * _side2;
         }
         
         /// <summary>
@@ -39,24 +38,18 @@ namespace ConsoleApp1
         /// <returns></returns>
        public double PerimetrCalculate()
         {
-            double result = 2 * (_side1 + _side2);
-            return result;
+            return 2 * (_side1 + _side2);
         }
 
         /// <summary>
         /// Свойство площади
         /// </summary>
-        public double Area
-        {
-            get => this.AreaCalculator();
-        }
-
+        public double Area=> this.AreaCalculator();
+        
         /// <summary>
         /// Свойство периметр
         /// </summary>
-        public double Perimetr
-        {
-            get => this.PerimetrCalculate();
-        }
+        public double Perimetr => this.PerimetrCalculate();
+       
     }
 }
