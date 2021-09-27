@@ -10,17 +10,17 @@ namespace ConsoleApp2
         /// <summary>
         /// Название книги 
         /// </summary>
-        public Title _title;
+        private Title _title;
         
         /// <summary>
         /// Автор книги 
         /// </summary>
-        public Author _author;
+        private Author _author;
         
         /// <summary>
         /// Содержание книги
         /// </summary>
-        public Content _content;
+        private Content _content;
 
         /// <summary>
         /// Класс книги
@@ -41,13 +41,13 @@ namespace ConsoleApp2
         public void Show()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"Название книги: {_title}");
+            Console.WriteLine($"Название книги: {_title.TitleBook}");
             
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"Автор книги: {_author}");
+            Console.WriteLine($"Автор книги: {_author.AuthorBook}");
             
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Содержание книги: {_content}");
+            Console.WriteLine($"Содержание книги: {_content.ContentBook}");
         }
 
 
@@ -90,6 +90,9 @@ namespace ConsoleApp2
         {
             this._title = title;
         }
+
+        public string TitleBook => _title;
+        
     }
     /// <summary>
     /// Класс Автор
@@ -107,6 +110,7 @@ namespace ConsoleApp2
             this._author = author;
         }
 
+        public string AuthorBook => _author;
     }
 
     /// <summary>
@@ -124,5 +128,7 @@ namespace ConsoleApp2
         {
             this._content = content;
         }
+
+        public string ContentBook => _content;
     }
 }
