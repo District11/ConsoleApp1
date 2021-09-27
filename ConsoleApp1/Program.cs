@@ -13,9 +13,7 @@ namespace ConsoleApp1
             
             Console.WriteLine("Введите значение ширины прямоугольника: ");
             string inputSide2 = Console.ReadLine();
-
-            double.TryParse(inputSide1, out side1);
-            double.TryParse(inputSide2, out side2);
+            
             if (double.TryParse(inputSide1, out side1) & double.TryParse(inputSide2, out side2))
             {
                 Console.WriteLine("Преобразование успешно");
