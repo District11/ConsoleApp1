@@ -6,10 +6,13 @@
     public class Pointer
     {
         /// <summary>
-        /// Поля класса Pointer
+        /// Поля: Точка A, Точка B
         /// </summary>
         private double _apoint, _bpoint;
-            
+        
+        /// <summary>
+        /// Поле наименования фигуры
+        /// </summary>
         private string _nameFigure;
         
         /// <summary>

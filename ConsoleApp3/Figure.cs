@@ -7,9 +7,24 @@ namespace ConsoleApp3
     /// </summary>
     public class Figure
     {
+        /// <summary>
+        /// Поле для периметра
+        /// </summary>
         private double perimeter;
+        
+        /// <summary>
+        /// Поле для точек
+        /// </summary> 
         private Pointer A, B, C, D, E;
+        
+        /// <summary>
+        /// Поле для наименования фигуры
+        /// </summary>
         private string nameFigure;
+        
+        /// <summary>
+        /// Поле для подсчёта колличества сторон
+        /// </summary>
         private int count;
 
         /// <summary>
@@ -89,21 +104,21 @@ namespace ConsoleApp3
             {
                 perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(A, C);
 
-                Console.WriteLine( "Эта фигура {0}, кго периметр = {1}",nameFigure, perimeter) ;
+                Console.WriteLine( "Эта фигура {0}, его периметр = {1}",nameFigure, perimeter) ;
             }
 
             if (count == 4)
             {
                 perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(C, D) + LengthSide(A,D);
 
-                Console.WriteLine( "Эта фигура {0}, кго периметр = {1}",nameFigure, perimeter) ;
+                Console.WriteLine( "Эта фигура {0}, его периметр = {1}",nameFigure, perimeter) ;
             }
 
             if (count == 5)
             {
                 perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(C, D)+ LengthSide(D,E) + LengthSide(E,A);
 
-                Console.WriteLine( "Эта фигура {0}, кго периметр = {1}",nameFigure, perimeter) ;
+                Console.WriteLine( "Эта фигура {0}, его периметр = {1}",nameFigure, perimeter) ;
             }
         }
 
