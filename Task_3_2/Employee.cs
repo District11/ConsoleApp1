@@ -129,9 +129,6 @@ namespace Task_3_2
                 case 4:
                     sumPay *= 5;
                     break;
-                default:
-                    Console.WriteLine("Ошибка! Введите значение заново:");
-                    break;
             }
             return sumPay;
         }

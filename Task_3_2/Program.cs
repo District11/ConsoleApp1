@@ -14,8 +14,6 @@ namespace Task_3_2
             //Вывод результата
             Console.WriteLine(employee.Surname + " " + employee.Name + " " + employee.Position);
             employee.ShowPay();
-
-            Console.ReadKey();
         }
     }
 }
