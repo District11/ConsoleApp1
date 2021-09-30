@@ -33,8 +33,8 @@
         /// <summary>
         /// Конструктор указателя
         /// </summary>
-        /// <param name="xpoint">указатель по x</param>
-        /// <param name="ypoint">указатель по y</param>
+        /// <param name="apoint">указатель по x</param>
+        /// <param name="apoint">указатель по y</param>
         /// <param name="nameFigure">Наименование фигуры</param>
         public Pointer(double apoint, double bpoint, string nameFigure)
         {

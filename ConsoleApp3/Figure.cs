@@ -10,85 +10,82 @@ namespace ConsoleApp3
         /// <summary>
         /// Поле для периметра
         /// </summary>
-        private double perimeter;
+        private double _perimeter;
         
         /// <summary>
         /// Поле для точек
         /// </summary> 
-        private Pointer A, B, C, D, E;
+        private Pointer _a, _b, _c, _d, _e;
         
         /// <summary>
         /// Поле для наименования фигуры
         /// </summary>
-        private string nameFigure;
+        private string _nameFigure;
         
         /// <summary>
         /// Поле для подсчёта колличества сторон
         /// </summary>
-        private int count;
+        private int _count;
 
         /// <summary>
         /// Конструктор треугольника
         /// </summary>
-        /// <param name="point1"></param>
-        /// <param name="point2"></param>
-        /// <param name="point3"></param>
-        public Figure(Pointer _A, Pointer _B, Pointer _C)
+        /// <param name="a">1 сторона</param>
+        /// <param name="b">2 сторона</param>
+        /// <param name="с">3 сторона</param>
+        public Figure(Pointer a, Pointer b, Pointer c)
         {
-            this.A = _A;
-            this.B = _B;
-            this.C = _C;
-            nameFigure = "Треугольник";
-            count = 3;
+            //Инциализация сторон треугольника
+            this._a = a;
+            this._b = b;
+            this._c = c;
+            _nameFigure = "Треугольник";
+            _count = 3;
         }
-        
+
         /// <summary>
         /// Конструктор прямоугольника, квадрата и т.д.
         /// </summary>
-        /// <param name="point1"></param>
-        /// <param name="point2"></param>
-        /// <param name="point3"></param>
-        /// <param name="point4"></param>
-        public Figure(Pointer _A, Pointer _B, Pointer _C, Pointer _D)
+        /// <param name="a">1 сторона</param>
+        /// <param name="b">2 сторона</param>
+        /// <param name="c">3 сторона</param>
+        /// <param name="d">4 сторона</param>
+        public Figure(Pointer a, Pointer b, Pointer c, Pointer d)
         {
-            this.A = _A;
-            this.B = _B;
-            this.C = _C;
-            this.D = _D;
-            nameFigure = "Прямоугольник";
-            count = 4;
+            //Инциализация сторон прямоугольника
+            this._a = a;
+            this._b = b;
+            this._c = c;
+            this._d = d;
+            _nameFigure = "Прямоугольник";
+            _count = 4;
         }
-        
+
         /// <summary>
         /// Конструктор пятиугольника
         /// </summary>
-        /// <param name="point1"></param>
-        /// <param name="point2"></param>
-        /// <param name="point3"></param>
-        /// <param name="point4"></param>
-        /// <param name="point5"></param>
-        public Figure(Pointer _A, Pointer _B, Pointer _C, Pointer _D, Pointer _E)
+        /// <param name="a">1 сторона</param>
+        /// <param name="b">2 сторона</param>
+        /// <param name="c">3 сторона</param>
+        /// <param name="d">4 сторона</param>
+        /// <param name="e">5 сторона</param>
+        public Figure(Pointer a, Pointer b, Pointer c, Pointer d, Pointer e)
         {
-            this.A = _A;
-            this.B = _B;
-            this.C = _C;
-            this.D = _D;
-            this.E = _E;
-            nameFigure = "Пятиугольник";
-            count = 5;
-        }
-
-        public void InitializationFigure()
-        {
-            Console.WriteLine("Введите название фигуры: ");
-            
+            //Инциализация сторон пятиугольника
+            this._a = a;
+            this._b = b;
+            this._c = c;
+            this._d = d;
+            this._e = e;
+            _nameFigure = "Пятиугольник";
+            _count = 5;
         }
         
         /// <summary>
         /// Метод для расчёта стороны многоугольника
         /// </summary>
-        /// <param name="X">Точка Х</param>
-        /// <param name="Y">Точка У</param>
+        /// <param name="A">Точка A</param>
+        /// <param name="B">Точка B</param>
         /// <returns></returns>
         public double LengthSide(Pointer A, Pointer B)
         {
@@ -100,27 +97,26 @@ namespace ConsoleApp3
         /// </summary>
         public void PerimetrCalculet()
         {
-            if (count == 3)
+            if (_count == 3)
             {
-                perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(A, C);
+                _perimeter = LengthSide(_a, _b) + LengthSide(_b, _c) + LengthSide(_a, _c);
 
-                Console.WriteLine( "Эта фигура {0}, его периметр = {1}",nameFigure, perimeter) ;
+                Console.WriteLine( "Эта фигура {0}, его периметр = {1}", _nameFigure, _perimeter) ;
             }
 
-            if (count == 4)
+            if (_count == 4)
             {
-                perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(C, D) + LengthSide(A,D);
+                _perimeter = LengthSide(_a, _b) + LengthSide(_b, _c) + LengthSide(_c, _d) + LengthSide(_a,_d);
 
-                Console.WriteLine( "Эта фигура {0}, его периметр = {1}",nameFigure, perimeter) ;
+                Console.WriteLine( "Эта фигура {0}, его периметр = {1}",_nameFigure, _perimeter) ;
             }
-
-            if (count == 5)
+            
+            if (_count == 5)
             {
-                perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(C, D)+ LengthSide(D,E) + LengthSide(E,A);
+                _perimeter = LengthSide(_a, _b) + LengthSide(_b, _c) + LengthSide(_c, _d)+ LengthSide(_d,_e) + LengthSide(_e,_a);
 
-                Console.WriteLine( "Эта фигура {0}, его периметр = {1}",nameFigure, perimeter) ;
+                Console.WriteLine( "Эта фигура {0}, его периметр = {1}",_nameFigure, _perimeter) ;
             }
         }
-
     }
 }
