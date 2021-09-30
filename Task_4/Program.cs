@@ -6,6 +6,7 @@ namespace Task_4
     {
         static void Main(string[] arg)
         {
+            int number;
             Console.WriteLine("Выберите действие: конвертация гривны в:" +
                               "\n1. Конвертация гривны в Евро " +
                               "\n2. Конвертация гривны в Доллары " +
@@ -13,40 +14,41 @@ namespace Task_4
                               "\n4. Конвертация Евро из гривны " +
                               "\n5. Конвертация Доллары из гривны" +
                               "\n6. Конвертация Рубля из гривны ");
-            
-            int number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите количество гривен");
-            Converter converter = new Converter(0.038, 0.032, 2.73);
-            Converter converter1 = new Converter(Convert.ToDouble(Console.ReadLine()));
-            switch (number)
+
+            Converter converter = new Converter(26.58, 30.98, 0.37);
+            string number1 = Console.ReadLine();
+            if (int.TryParse(number1, out number))
             {
-                case 1:
-                    converter1._eur = converter._eur * converter1._uah;
-                    converter1.Info();
-                    break;
-                case 2:
-                    converter1._usd = converter._usd * converter1._uah;
-                    converter1.Info();
-                    break;
-                case 3:
-                    converter1._rub = converter._rub * converter1._uah;
-                    converter1.Info();
-                    break;
-                case 4:
-                    converter._eur = converter1._uah / converter._eur;
-                    converter1.Info();
-                    break;
-                case 5:
-                    converter._usd = converter1._uah / converter._usd;
-                    converter1.Info();
-                    break;
-                case 6:
-                    converter._rub = converter1._uah / converter._rub;
-                    converter1.Info();
-                    break;
-                default:
-                    Console.WriteLine("Повторите ввод");
-                    break;
+                double sum;
+                Console.WriteLine("Введите количество сумму для конвертации: ");
+                string sumInput = Console.ReadLine();
+                if(double.TryParse(sumInput,out sum))
+                {
+                    switch (number)
+                    {
+                        case 1:
+                            converter.ConvertToEur(sum);
+                            break;
+                        case 2:
+                            converter.ConvertToUsd(sum);
+                            break;
+                        case 3:
+                            converter.ConvertToRub(sum);
+                            break;
+                        case 4:
+                            converter.ConvertFromEur(sum);
+                            break;
+                        case 5:
+                            converter.ConvertFromUsd(sum);
+                            break;
+                        case 6:
+                            converter.ConvertFromRub(sum);
+                            break;
+                        default:
+                            Console.WriteLine("Повторите ввод");
+                            break;
+                    }
+                }               
             }
         }
     }

@@ -2,29 +2,66 @@
 
 namespace Task_4
 {
+    /// <summary>
+    /// Класс конвертёра
+    /// </summary>
     public class Converter
     {
-        public double _usd { get; set; }
-        public double _eur { get; set; }
-        public double _rub { get; set; }
-        public double _uah { get; set; }
-        
         /// <summary>
         /// 
+        /// </summary>
+        public double _usd, _eur, _rub, sum;
+
+        /// <summary>
+        /// Метод для конвертации валюты
         /// </summary>
         /// <param name="usd"></param>
         /// <param name="eur"></param>
         /// <param name="rub"></param>
-        public ConverterTo(double usd, double eur, double rub)
+        public Converter(double usd, double eur, double rub)
         {
-            this._usd = 26.54 ;
-            this._eur = 31.04;
-            this._rub = 0.37;
+            //Инциализация валюты
+            this._usd = usd;
+            this._eur = eur;
+            this._rub = rub;
         }
 
-        public void Info()
+        public void ConvertToUsd(double sum)
         {
-            Console.WriteLine($"Ваши гривны: {_uah} = EUR:{_eur}, USD:{_usd}, RUB:{_rub}");
+            double result;
+            result = sum / _usd;
+            Console.WriteLine($"{result} Долларов");
+
+        }
+        public void ConvertFromUsd(double sum)
+        {
+            double result;
+            result = sum * _usd;
+            Console.WriteLine($"{result} Гривнов");
+        }
+        public void ConvertToRub(double sum)
+        {
+            double result;
+            result = sum / _rub;
+            Console.WriteLine($"{result} Рублей");
+        }
+        public void ConvertFromRub(double sum)
+        {
+            double result;
+            result = sum * _rub;
+            Console.WriteLine($"{result} Гривнов");
+        }
+        public void ConvertToEur(double sum)
+        {
+            double result;
+            result = sum * _eur;
+            Console.WriteLine($"{result} Евро");
+        }
+        public void ConvertFromEur(double sum)
+        {
+            double result;
+            result = sum / _eur;
+            Console.WriteLine($"{result} Гривнов");
         }
     }
 }
