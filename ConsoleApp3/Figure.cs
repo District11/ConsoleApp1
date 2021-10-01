@@ -84,12 +84,12 @@ namespace ConsoleApp3
         /// <summary>
         /// Метод для расчёта стороны многоугольника
         /// </summary>
-        /// <param name="A">Точка A</param>
-        /// <param name="B">Точка B</param>
+        /// <param name="a">Точка A</param>
+        /// <param name="b">Точка B</param>
         /// <returns></returns>
-        public double LengthSide(Pointer A, Pointer B)
+        public double LengthSide(Pointer a, Pointer b)
         {
-            return Math.Sqrt(Math.Pow((B.PointerA - A.PointerB), 2) + Math.Pow((B.PointerA - A.PointerB), 2));
+            return Math.Sqrt(Math.Pow((b.PointerA - a.PointerB), 2) + Math.Pow((b.PointerA - a.PointerB), 2));
         }
         
         /// <summary>

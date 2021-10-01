@@ -29,7 +29,7 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из гривнов в доллары
         /// </summary>
-        /// <param name="sum"></param>
+        /// <param name="sum">Доллары</param>
         public void ConvertToUsd(double sum)
         {
             double result;
@@ -41,7 +41,7 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из долларов в гривны 
         /// </summary>
-        /// <param name="sum"></param>
+        /// <param name="sum">гривны</param>
         public void ConvertFromUsd(double sum)
         {
             double result;
@@ -52,7 +52,7 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из гривнов в рубли
         /// </summary>
-        /// <param name="sum"></param>
+        /// <param name="sum">Рубли</param>
         public void ConvertToRub(double sum)
         {
             double result;
@@ -63,7 +63,7 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из рублей в гривны 
         /// </summary>
-        /// <param name="sum"></param>
+        /// <param name="sum">Гривны</param>
         public void ConvertFromRub(double sum)
         {
             double result;
@@ -74,7 +74,7 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из гривнов в евро
         /// </summary>
-        /// <param name="sum"></param>
+        /// <param name="sum">Евро</param>
         public void ConvertToEur(double sum)
         {
             double result;
@@ -85,7 +85,7 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из евро в гривны
         /// </summary>
-        /// <param name="sum"></param>
+        /// <param name="sum">Гривны</param>
         public void ConvertFromEur(double sum)
         {
             double result;
