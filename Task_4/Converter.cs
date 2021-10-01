@@ -8,16 +8,16 @@ namespace Task_4
     public class Converter
     {
         /// <summary>
-        /// 
+        /// Поле валют
         /// </summary>
-        public double _usd, _eur, _rub, sum;
+        private double _usd, _eur, _rub, sum;
 
         /// <summary>
-        /// Метод для конвертации валюты
+        /// Конструктор для валюты валюты
         /// </summary>
-        /// <param name="usd"></param>
-        /// <param name="eur"></param>
-        /// <param name="rub"></param>
+        /// <param name="usd">Доллар</param>
+        /// <param name="eur">Евро</param>
+        /// <param name="rub">Рубли</param>
         public Converter(double usd, double eur, double rub)
         {
             //Инциализация валюты
