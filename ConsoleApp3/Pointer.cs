@@ -18,17 +18,17 @@
         /// <summary>
         /// Свойство указателя х
         /// </summary>
-        public double PointerA { get => _apoint; }
+        public double PointerA => _apoint; 
         
         /// <summary>
         /// Свойство указателя y
         /// </summary>
-        public double PointerB { get => _bpoint; }
+        public double PointerB => _bpoint; 
         
         /// <summary>
         /// Свойство наименования фигуры
         /// </summary>
-        public  string NameFigure { get => _nameFigure; }
+        public  string NameFigure => _nameFigure; 
 
         /// <summary>
         /// Конструктор указателя
