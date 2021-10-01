@@ -6,7 +6,6 @@ namespace Task_4
     {
         static void Main(string[] arg)
         {
-            int number;
             Console.WriteLine("Выберите действие: конвертация гривны в:" +
                               "\n1. Конвертация гривны в Евро " +
                               "\n2. Конвертация гривны в Доллары " +
@@ -17,7 +16,7 @@ namespace Task_4
 
             Converter converter = new Converter(26.58, 30.98, 0.37);
             string number1 = Console.ReadLine();
-            if (int.TryParse(number1, out number))
+            if (int.TryParse(number1, out int number))
             {
                 double sum;
                 Console.WriteLine("Введите количество сумму для конвертации: ");
