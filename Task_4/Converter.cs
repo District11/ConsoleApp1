@@ -13,7 +13,7 @@ namespace Task_4
         private double _usd, _eur, _rub, sum;
 
         /// <summary>
-        /// Конструктор для валюты валюты
+        /// Конструктор для валюты
         /// </summary>
         /// <param name="usd">Доллар</param>
         /// <param name="eur">Евро</param>
@@ -53,6 +53,7 @@ namespace Task_4
         /// Метод для конвертирования из гривнов в рубли
         /// </summary>
         /// <param name="sum">Рублей</param>
+
         public void ConvertToRub(double sum)
         {
             double result;
@@ -63,7 +64,8 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из рублей в гривны 
         /// </summary>
-        /// <param name="sum">гривны</param>
+        /// <param name="sum">Гривны</param>
+
         public void ConvertFromRub(double sum)
         {
             double result;
@@ -85,7 +87,7 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из евро в гривны
         /// </summary>
-        /// <param name="sum">гривны</param>
+        /// <param name="sum">Гривны</param>
         public void ConvertFromEur(double sum)
         {
             double result;
