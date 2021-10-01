@@ -2,14 +2,21 @@
 
 namespace Task__3_0
 {
-    public class ConsolePrinter: Printer
+    /// <summary>
+    /// Класс консольной печати, которая наследуется от родительского Printer
+    /// </summary>
+    public class ConsolePrinter : Printer
     {
-        public ConsolePrinter(ConsoleColor color) : base(color)
-        {
-            
-        }
+        /// <summary>
+        /// Конструктор для консольной печати
+        /// </summary>
+        /// <param name="color">Цвет</param>
+        public ConsolePrinter(ConsoleColor color) : base(color) { }
     }
     
+    /// <summary>
+    /// Класс печати
+    /// </summary>
     public class Printer
     {
         /// <summary>
@@ -26,7 +33,10 @@ namespace Task__3_0
             this.color = color;
         }
         
-        
+        /// <summary>
+        /// Выведение значнеия
+        /// </summary>
+        /// <param name="value">Значение, которое передаётся в консоль</param>
         public void Print(string value)
         {
             Console.ForegroundColor = color; //Задает цвет текста консоли.
