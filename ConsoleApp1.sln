@@ -1,22 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{8262AA94-C86B-4392-B8EE-C5F29C8C23C5}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{8262AA94-C86B-4392-B8EE-C5F29C8C23C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{254405E2-BA13-424C-8FC3-FB3982D31139}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{254405E2-BA13-424C-8FC3-FB3982D31139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{EE6A30BE-F6FC-470A-9C28-BE9974412CB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{EE6A30BE-F6FC-470A-9C28-BE9974412CB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_4", "Task_4\Task_4.csproj", "{96B994AD-EAC3-442C-BDAA-BFCA31BB23A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_4", "Task_4\Task_4.csproj", "{96B994AD-EAC3-442C-BDAA-BFCA31BB23A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_4_2", "Task_4_2\Task_4_2\Task_4_2.csproj", "{6B5B5B7F-3363-4E67-AA72-F0D9245A8831}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_4_2", "Task_4_2\Task_4_2\Task_4_2.csproj", "{6B5B5B7F-3363-4E67-AA72-F0D9245A8831}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task _3_0", "Task _3_0\Task _3_0.csproj", "{0EEC1F2C-CCAA-416C-BC7D-5D2B239E6AB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task _3_0", "Task _3_0\Task _3_0.csproj", "{0EEC1F2C-CCAA-416C-BC7D-5D2B239E6AB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2_3", "Task2_3\Task2_3.csproj", "{4266B7FF-32A8-4297-8218-D2AA2D4921A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task2_3", "Task2_3\Task2_3.csproj", "{4266B7FF-32A8-4297-8218-D2AA2D4921A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_3_3", "Task_3_3\Task_3_3.csproj", "{7FE9F89B-ABDF-430A-9CF0-074DA3C08A85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_3_3", "Task_3_3\Task_3_3.csproj", "{7FE9F89B-ABDF-430A-9CF0-074DA3C08A85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_4_3", "Task_4_3\Task_4_3.csproj", "{7F328593-7AF5-4F69-97CE-07C81B5CC5B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_4_3", "Task_4_3\Task_4_3.csproj", "{7F328593-7AF5-4F69-97CE-07C81B5CC5B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_2_10", "Task_2_10\Task_2_10.csproj", "{A2E62976-434F-4F73-B1DB-0043CEA6DEF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,5 +65,15 @@ Global
 		{7F328593-7AF5-4F69-97CE-07C81B5CC5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F328593-7AF5-4F69-97CE-07C81B5CC5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F328593-7AF5-4F69-97CE-07C81B5CC5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E62976-434F-4F73-B1DB-0043CEA6DEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E62976-434F-4F73-B1DB-0043CEA6DEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E62976-434F-4F73-B1DB-0043CEA6DEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E62976-434F-4F73-B1DB-0043CEA6DEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A7757DD-9404-40EC-B560-69EA0A8F58C7}
 	EndGlobalSection
 EndGlobal
