@@ -13,7 +13,7 @@ namespace Task__3_0
         /// <param name="color">Цвет</param>
         public ConsolePrinter(ConsoleColor color) : base(color) { }
     }
-    
+
     /// <summary>
     /// Класс печати
     /// </summary>
@@ -32,7 +32,7 @@ namespace Task__3_0
         {
             this.color = color;
         }
-        
+
         /// <summary>
         /// Выведение значнеия
         /// </summary>
