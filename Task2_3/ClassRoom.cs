@@ -73,9 +73,9 @@ namespace Task2_3
                 case 1: return new ExcelentPupil();
                 case 2: return new GoodPupil();
                 case 3: return new BadPupil();
+                default:
+                    return new BadPupil();
             }
-
-            return new BadPupil();
         }
 
         /// <summary>
