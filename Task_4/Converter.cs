@@ -8,9 +8,9 @@ namespace Task_4
     public class Converter
     {
         /// <summary>
-        /// Поля валют
+        /// Поле валют
         /// </summary>
-       private double _usd, _eur, _rub, sum;
+        private double _usd, _eur, _rub, sum;
 
         /// <summary>
         /// Конструктор для валюты
@@ -52,7 +52,8 @@ namespace Task_4
         /// <summary>
         /// Метод для конвертирования из гривнов в рубли
         /// </summary>
-        /// <param name="sum">Рубли</param>
+        /// <param name="sum">Рублей</param>
+
         public void ConvertToRub(double sum)
         {
             double result;
@@ -64,6 +65,7 @@ namespace Task_4
         /// Метод для конвертирования из рублей в гривны 
         /// </summary>
         /// <param name="sum">Гривны</param>
+
         public void ConvertFromRub(double sum)
         {
             double result;
