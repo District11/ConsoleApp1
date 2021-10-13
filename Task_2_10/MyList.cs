@@ -48,22 +48,6 @@
         }
 
         /// <summary>
-        /// Метод для получения элемента в массиве
-        /// </summary>
-        /// <returns>Булево значение</returns>
-        public bool Contains(T item)
-        {
-            for (int i = 0; i < _array.Length; i++)
-            {
-                if ((int)(object)_array[i] == (int)(object)item)
-                {
-                    return true;
-                }
-            }       
-            return false;
-        }
-
-        /// <summary>
         /// Метод удаления массива
         /// </summary>
         public void Remove()
@@ -72,17 +56,17 @@
         }
 
         /// <summary>
-        /// 
+        /// Переопределение медода ToString базового класса object
         /// </summary>
         /// <returns></returns>
-        public override string ToString() //Переопределение медода ToString базового класса object 
+        public override string ToString()
         {
-            string stroka = null; //Создание локальной переменной строкового типа
+            string str = null; //Создание локальной переменной строкового типа
             for (int i = 0; i < _array.Length; i++)
             {
-                stroka += _array[i] + " "; //Запись каждого элемента массива в локальную переменную
+                str += _array[i] + " "; //Запись каждого элемента массива в локальную переменную
             }
-            return "Размерность массива " + _array.Length + " Элементы массива:" + stroka;
+            return "Размерность массива " + _array.Length + " Элементы массива:" + str;
         }
     }
 }

@@ -25,16 +25,6 @@ namespace Task_2_10
             }
             Console.WriteLine();
             Console.WriteLine(new string('-', 30));
-
-            Console.WriteLine("Введите значение для поиска:");
-            if (list.Contains(Convert.ToInt32(Console.ReadLine()))) //Вызываем метод поиска и передаем в него значение полученое от пользовалется конвертированное в Int
-            {
-                Console.WriteLine("Введенное значение содержится в массиве");
-            }
-            else
-            {
-                Console.WriteLine("Значение не найдено!");
-            }
         }
     }
 }
