@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_4_3", "Task_4_3\Task_4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_2_10", "Task_2_10\Task_2_10.csproj", "{A2E62976-434F-4F73-B1DB-0043CEA6DEF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task _3_0", "Task _3_0\Task _3_0.csproj", "{0EEC1F2C-CCAA-416C-BC7D-5D2B239E6AB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2_3", "Task2_3\Task2_3.csproj", "{4266B7FF-32A8-4297-8218-D2AA2D4921A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
