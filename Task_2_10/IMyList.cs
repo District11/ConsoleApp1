@@ -19,7 +19,7 @@
         T this[int index] { get; }
         
         /// <summary>
-        /// Метод для поулчения длинны массива
+        /// Метод для получения длинны массива
         /// </summary>
         int Counter { get; }
 
@@ -27,12 +27,5 @@
         /// Метод удаления массива
         /// </summary>
         void Remove();
-
-        /// <summary>
-        /// Метод для поиска элемента в массиве
-        /// </summary>
-        /// <param name="item">Элемент поиска</param>
-        /// <returns></returns>
-        bool Contains(T item);
     }
 }
