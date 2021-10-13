@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_4", "Task_4\Task_4.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_4_2", "Task_4_2\Task_4_2\Task_4_2.csproj", "{6B5B5B7F-3363-4E67-AA72-F0D9245A8831}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task _3_0", "Task _3_0\Task _3_0.csproj", "{0EEC1F2C-CCAA-416C-BC7D-5D2B239E6AB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2_3", "Task2_3\Task2_3.csproj", "{4266B7FF-32A8-4297-8218-D2AA2D4921A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{6B5B5B7F-3363-4E67-AA72-F0D9245A8831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B5B5B7F-3363-4E67-AA72-F0D9245A8831}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B5B5B7F-3363-4E67-AA72-F0D9245A8831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEC1F2C-CCAA-416C-BC7D-5D2B239E6AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEC1F2C-CCAA-416C-BC7D-5D2B239E6AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEC1F2C-CCAA-416C-BC7D-5D2B239E6AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEC1F2C-CCAA-416C-BC7D-5D2B239E6AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4266B7FF-32A8-4297-8218-D2AA2D4921A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4266B7FF-32A8-4297-8218-D2AA2D4921A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4266B7FF-32A8-4297-8218-D2AA2D4921A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4266B7FF-32A8-4297-8218-D2AA2D4921A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
