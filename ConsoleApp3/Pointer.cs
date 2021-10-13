@@ -28,7 +28,7 @@
         /// <summary>
         /// Свойство наименования фигуры
         /// </summary>
-        public  string NameFigure => _nameFigure;
+        public  string NameFigure => _nameFigure; 
 
         /// <summary>
         /// Конструктор указателя
